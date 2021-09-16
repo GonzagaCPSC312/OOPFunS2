@@ -2,19 +2,19 @@ import java.util.Arrays;
 
 public class PointTester {
     public static void main(String[] args) {
-        Point origin = new Point();
+        Circle.Point origin = new Circle.Point();
 
-        Point p2 = new Point(3, -4);
+        Circle.Point p2 = new Circle.Point(3, -4);
 
         System.out.println(origin);
         System.out.println(origin.getX());
 
         // array of references
-        Point[] points = new Point[5];
+        Circle.Point[] points = new Circle.Point[5];
         // NO new point objects were not just made!!
         // we have to make them
         for (int i = 0; i < points.length; i++) {
-            points[i] = new Point(i, i); // actually making a Point object here!!
+            points[i] = new Circle.Point(i, i); // actually making a Point object here!!
         }
         // print out the points array
         // static toString of the Arrays class
